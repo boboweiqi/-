@@ -1,0 +1,5 @@
+1.压力机loadrunner进行高并发测试tps上不去，但是应用环境，数据库环境的CPU内存使用率不高
+  #检查环境的TIME_WAIT(netstat -an|grep 10.114.29.120:8001|grep TIME_WAIT|wc -l)
+  #如果是使用了HTTP协议，代码拼装报文头时注意//"Connection":close  keep-alive:close
+  #注意监控系统的处理一笔交易的耗时
+  
